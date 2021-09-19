@@ -1,6 +1,7 @@
 import React from 'react';
 import TodosList from './TodosList';
 import Header from './Header';
+import './styles.css';
 
 class TodoContainer extends React.Component {
   constructor(props) {
@@ -30,7 +31,7 @@ class TodoContainer extends React.Component {
     const { todos } = this.state;
     // console.log(todos);
     return (
-      <div>
+      <div className="wrapper">
         <Header />
         <TodosList todos={todos} />
       </div>

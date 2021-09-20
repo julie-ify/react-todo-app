@@ -24,9 +24,8 @@ class InputTodo extends Component {
       this.setState({
         title: '',
       });
-    } else {
-      alert('Please write item');
     }
+    return {};
   };
 
   render() {
@@ -41,7 +40,9 @@ class InputTodo extends Component {
           onChange={this.onChange}
           name="title"
         />
-        <button type="submit" className="input-submit">Submit</button>
+        <button type="submit" className="input-submit">
+          Submit
+        </button>
       </form>
     );
   }

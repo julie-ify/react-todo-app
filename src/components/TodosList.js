@@ -4,6 +4,7 @@ import TodoItem from './TodoItem';
 
 const TodosList = (props) => {
   const { todos } = props;
+  const { setUpdate } = props;
   const { handleChangeProps } = props;
   const { deleteTodoProps } = props;
   return (
@@ -14,6 +15,7 @@ const TodosList = (props) => {
           todo={todo}
           handleChangeProps={handleChangeProps}
           deleteTodoProps={deleteTodoProps}
+          setUpdate={setUpdate}
         />
       ))}
     </ul>

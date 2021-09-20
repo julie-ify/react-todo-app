@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaTrash } from 'react-icons/fa';
 import styles from './TodoItem.module.css';
 /* eslint-disable react/prop-types */
 /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */
@@ -48,7 +49,7 @@ const TodoItem = (props) => {
           onChange={() => props.handleChangeProps(id)}
         />
         <button type="button" onClick={() => props.deleteTodoProps(id)}>
-          Delete
+          <FaTrash />
         </button>
         <span
           style={completed ? completedStyle : null}

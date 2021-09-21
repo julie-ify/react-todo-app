@@ -3,10 +3,7 @@ import TodoItem from './TodoItem';
 /* eslint-disable react/prop-types */
 
 const TodosList = (props) => {
-  const { todos } = props;
-  const { setUpdate } = props;
-  const { handleChangeProps } = props;
-  const { deleteTodoProps } = props;
+  const { todos, setUpdate, handleChangeProps, deleteTodoProps } = props;
   return (
     <ul className="todo-wrapper">
       {todos.map((todo) => (

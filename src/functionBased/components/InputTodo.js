@@ -3,24 +3,17 @@ import { FaPlusCircle } from 'react-icons/fa';
 /* eslint-disable react/prop-types */
 
 const InputTodo = (props) => {
-  const [inputText, setInputText] = useState({
-    title: '',
-  });
+  const [title, setTitle] = useState('');
 
   const onChange = (e) => {
-    setInputText({
-      ...inputText,
-      [e.target.name]: e.target.value,
-    });
+    setTitle(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputText.title.trim()) {
-      props.addTodoProps(inputText.title);
-      setInputText({
-        title: '',
-      });
+    if (title.trim()) {
+      props.addTodoProps(title);
+      setTitle('');
     }
     return {};
   };
@@ -31,7 +24,7 @@ const InputTodo = (props) => {
         type="text"
         className="input-text"
         placeholder="Add todo..."
-        value={inputText.title}
+        value={title}
         name="title"
         onChange={onChange}
       />

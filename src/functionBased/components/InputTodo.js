@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 
 const InputTodo = (props) => {
   const [title, setTitle] = useState('');
@@ -31,6 +31,10 @@ const InputTodo = (props) => {
       <button type="submit" className="input-submit" aria-label="Add"><FaPlusCircle style={{ color: 'darkcyan', fontSize: '20px', marginTop: '2px' }} /></button>
     </form>
   );
+};
+
+InputTodo.propTypes = {
+  addTodoProps: PropTypes.func.isRequired,
 };
 
 export default InputTodo;

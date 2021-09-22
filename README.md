@@ -2,14 +2,15 @@
 
 # React to-do App
 
-> This project entails building a user-friendly and responsive to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back. This project was built with Reactjs.
+> This project entails building a user-friendly and responsive to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back. This project was built with React.js.
 
-<!-- ![screenshot](./src/assets/images/scrnsht.png) -->
+![screenshot](./public/react-todo-img.png)
 
 ## Built With
 - React
-<!-- ## Live Demo
-Visit the live demo [here](https://bit.ly/3tI5qU1) -->
+
+## Live Demo
+Visit the live demo [here](https://julie-ify.github.io/react-todo-app)
 
 ## Getting Started
 
@@ -46,7 +47,7 @@ Visit the live demo [here](https://bit.ly/3tI5qU1) -->
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/julie-ify/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/julie-ify/react-todo-app/issues).
 
 ## Show your support
 
@@ -54,6 +55,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose design template was used
+- Hat tip to [ibaslogic](https://ibaslogic.com/react-tutorial-for-beginners/)
 - Inspiration
 - etc
